@@ -22,6 +22,13 @@ pipeline {
             steps {
                 sh 'mvn -s settings.xml -DskipTests install'
             }
+
+        stage('Post Build'){
+            steps {
+                sh 'echo Build Complete'
+            }
+
+        }
             
         }
     }        
