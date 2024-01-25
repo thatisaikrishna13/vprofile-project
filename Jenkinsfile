@@ -21,14 +21,8 @@ pipeline {
         stage('Build'){
             steps {
                 sh 'mvn -s settings.xml -DskipTests install'
+                echo 'Build successful'
             }
-
-        stage('Post Build'){
-            steps {
-                sh 'echo Build Complete'
-            }
-
-        }
             
         }
     }        
