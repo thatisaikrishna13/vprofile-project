@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM openjdk:8 AS BUILD_IMAGE
+FROM openjdk:22-bookworm AS BUILD_IMAGE
 RUN apt update && apt install maven -y
 
 # Clone the repository, checkout the 'docker' branch, and build the application
