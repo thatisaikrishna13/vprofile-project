@@ -3,7 +3,7 @@ FROM openjdk:8 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
 
 # Clone the repository, checkout the 'docker' branch, and build the application
-RUN git clone -b vp-docker https://github.com/imranvisualpath/vprofile-project.git
+RUN git clone -b vp-docker https://github.com/IfeanyiSam/vprofile-project.git
 RUN cd vprofile-project && mvn install
 
 # Stage 2: Create the final image with Tomcat
