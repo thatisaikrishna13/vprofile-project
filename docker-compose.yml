@@ -38,7 +38,7 @@ services:
   vproweb:
     build:
       context: ./Docker-files/web
-    image: ifeanyisam/vproeweb
+    image: ifeanyisam/vproweb
     container_name: vproweb
     ports:
       - "80:80"
